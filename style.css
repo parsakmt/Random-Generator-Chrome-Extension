@@ -74,9 +74,9 @@ input[type = "text"] {
     margin-right: 50px;
 }
 
-/*Labels and Span*/
+/*Paragraphs, Labels, and Span*/
 
-label{
+label, p{
     color: crimson;
     font-family: 'fantasy', 'monospace', 'Franklin Gothic Medium';
     font-size: 20px;
@@ -86,10 +86,14 @@ label{
     margin-right: 60px;
 }
 
+#errorMessage {
+    display: none; 
+}
+
 span {
     font-size: 45px; 
     font-weight: bold;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    letter-spacing: .06em;
+    letter-spacing: .04em;
 }
 
