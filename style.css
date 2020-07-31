@@ -1,3 +1,6 @@
+
+/*Heading and Body*/
+
 body {
     min-width:300px;
     background: mistyrose;
@@ -21,7 +24,9 @@ div{
     text-align: center;
 }
 
-.buttons {
+/*Buttons and Submit Input Type*/
+
+.buttons, input[type = "submit"] {
     background-color: red;
     color: pink;
 
@@ -58,41 +63,33 @@ div{
     min-height: 35px;
 }
 
-label{
-    color: crimson;
-    font-size: 20px;
-    font-family: 'fantasy', 'monospace', 'Franklin Gothic Medium';
-}
-
-#minNumLabel {
-    margin-right: 60px;
-}
+/*Input Text*/
 
 input[type = "text"] {
     width: 85px; 
     font-family: 'monospace';
 }
 
-input[type = "submit"] {
-    background-color: red;
-    color: pink;
-
-    font-size: 32px;
-    font-family: 'fantasy', 'monospace', 'Franklin Gothic Medium';
-    text-decoration: none;
-    text-align: center; 
-
-    border-radius: 2px;
-    border-style: ridge;
-    border-color: crimson; 
-
-    cursor: pointer;
-
-    margin-bottom: 10px;
-    min-width: 200px; 
-    min-height: 50px;
-}
-
 #minNum {
     margin-right: 50px;
 }
+
+/*Labels and Span*/
+
+label{
+    color: crimson;
+    font-family: 'fantasy', 'monospace', 'Franklin Gothic Medium';
+    font-size: 20px;
+}
+
+#minNumLabel {
+    margin-right: 60px;
+}
+
+span {
+    font-size: 45px; 
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: .06em;
+}
+
