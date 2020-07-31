@@ -24,6 +24,7 @@ div{
     text-align: center;
 }
 
+
 /*Buttons and Submit Input Type*/
 
 .buttons, input[type = "submit"] {
@@ -57,7 +58,7 @@ div{
     transition: 0.01s;
 } 
 
-.submitButton {
+.submitButton, .home, .reset {
     font-size: 25px;
     min-width: 125px; 
     min-height: 35px;
