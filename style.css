@@ -1,0 +1,98 @@
+body {
+    min-width:300px;
+    background: mistyrose;
+}
+
+h1 {
+    font-size: 32px;
+    font-family: 'fantasy', 'monospace', 'Franklin Gothic Medium';
+    color: maroon;
+    margin-top: 15px; 
+    margin-bottom: 15px;
+}
+
+hr{
+    height: 8px; 
+    margin-bottom: 25px; 
+    background-color: black; 
+}
+
+div{
+    text-align: center;
+}
+
+.buttons {
+    background-color: red;
+    color: pink;
+
+    font-size: 32px;
+    font-family: 'fantasy', 'monospace', 'Franklin Gothic Medium';
+    text-decoration: none;
+    text-align: center; 
+
+    border-radius: 2px;
+    border-style: ridge;
+    border-color: crimson; 
+
+    cursor: pointer;
+
+    margin-bottom: 10px;
+    min-width: 200px; 
+    min-height: 50px;
+}
+
+.buttons:hover {
+  background-color: pink;
+  color: red; 
+  transition: .7s;
+}
+
+.buttons:active { 
+    transform: scale(0.96); 
+    transition: 0.01s;
+} 
+
+.submitButton {
+    font-size: 25px;
+    min-width: 125px; 
+    min-height: 35px;
+}
+
+label{
+    color: crimson;
+    font-size: 20px;
+    font-family: 'fantasy', 'monospace', 'Franklin Gothic Medium';
+}
+
+#minNumLabel {
+    margin-right: 60px;
+}
+
+input[type = "text"] {
+    width: 85px; 
+    font-family: 'monospace';
+}
+
+input[type = "submit"] {
+    background-color: red;
+    color: pink;
+
+    font-size: 32px;
+    font-family: 'fantasy', 'monospace', 'Franklin Gothic Medium';
+    text-decoration: none;
+    text-align: center; 
+
+    border-radius: 2px;
+    border-style: ridge;
+    border-color: crimson; 
+
+    cursor: pointer;
+
+    margin-bottom: 10px;
+    min-width: 200px; 
+    min-height: 50px;
+}
+
+#minNum {
+    margin-right: 50px;
+}
