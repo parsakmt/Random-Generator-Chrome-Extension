@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Letter Generator</title>
+
+    <link  rel = "stylesheet" type = "text/css" href = "style.css"> 
+    <script src="randLetterGen.js"></script>
+</head>
+<body>
+    <div id = "heading">
+        <h1>Random Letter <br/>Generator</h1>
+    </div>
+
+    <hr/>
+
+    <div id = "inputs">
+        <label for = "startingLetter" id = "startingLetterLabel">Starting</label> 
+        <label for = "endingLetter" id = "endingLetterLabel">Ending</label> <br/>
+
+        <input id = "startingLetter" type = "text" maxLength = "1" value = "a">
+        <input id = "endingLetter" type = "text" maxLength = "1" value = "z"> <br/> <br/>
+
+        <button id = "submit" class = "buttons submitButton">Submit</button> <br/> <br/>
+    </div>
+
+
+    <div id = "result">
+        <h2>Result: </h2><br/>
+
+        <span id = "randLetterResult"><br/></span>
+        <p id = "errorMessage"></p>
+
+    </div> 
+
+    <hr/>
+
+    <div id = "footerButtons">
+        <a href = "popup.html">
+            <button class = "buttons home">Home</button> 
+        </a>
+        <button id = "reset" class = "buttons reset">Reset</button> <br/>
+    </div>
+
+
+    
+</body>
+</html>

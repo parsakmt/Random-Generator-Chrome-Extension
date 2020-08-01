@@ -1,6 +1,6 @@
 //Determines if default or saved information should be added upon loading
 window.onload = function() {
-    chrome.storage.sync.get(["min", "max", "randResult"], function(num) {
+    chrome.storage.sync.get(["min", "max", "numResult"], function(num) {
         
         if (num.min == null && num.max == null) {
             resetToDefault(); 
@@ -8,7 +8,9 @@ window.onload = function() {
         else {
             document.getElementById("minNum").value = num.min;
             document.getElementById("maxNum").value = num.max; 
-            document.getElementById("randNumResult").innerHTML = num.randResult;
+            
+            //So as to not lose the line break when moving to the homescreen
+            if (num.numResult != "") document.getElementById("randNumResult").innerHTML = num.numResult;
         }   
     });
 }
@@ -48,6 +50,11 @@ function resetToDefault() {
     var lineBreakElement = document.createElement('br');
     document.getElementById("randNumResult").innerHTML = ""; 
     document.getElementById('randNumResult').appendChild(lineBreakElement);
+
+    //Saves information to chrome storage
+    chrome.storage.sync.set({'min': 0});
+    chrome.storage.sync.set({'max': 10});
+    chrome.storage.sync.set({'numResult': ""});
 }
 
 function numIsInteger(num) {
@@ -94,9 +101,10 @@ function main() {
 
         var randNum = randNumGenerator(minNum, maxNum).toString(); 
 
+        //Saves information to chrome storage
         chrome.storage.sync.set({'min': minNum});
         chrome.storage.sync.set({'max': maxNum});
-        chrome.storage.sync.set({'randResult': randNum});
+        chrome.storage.sync.set({'numResult': randNum});
 
 
         document.getElementById("errorMessage").style.display = "none";

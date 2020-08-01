@@ -83,7 +83,7 @@ label, p{
     font-size: 20px;
 }
 
-#minNumLabel {
+#minNumLabel ,#startingLetterLabel{
     margin-right: 60px;
 }
 
