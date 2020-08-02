@@ -48,9 +48,9 @@ function resetToDefault() {
     document.getElementById('randLetterResult').appendChild(lineBreakElement);
 
     //Saves information to chrome storage
-    chrome.storage.sync.set({'min': 0});
-    chrome.storage.sync.set({'max': 10});
-    chrome.storage.sync.set({'numResult': ""});
+    chrome.storage.sync.set({"starting": "a"});
+    chrome.storage.sync.set({"ending": "z"});
+    chrome.storage.sync.set({"letterResult": ""});
 }
 
 //Main Function for random letter generator
