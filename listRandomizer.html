@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Randomizer</title>
+
+    <link  rel = "stylesheet" type = "text/css" href = "style.css"> 
+    <script src="listRandomizer.js"></script>
+</head>
+<body>
+
+    <div id = "heading">
+        <h1>List Randomizer</h1>
+    </div>
+
+    <hr/>
+
+    <div id = "inputs">
+
+        <label for = "listInput" id = "listInputLabel">List Input Box</label> <br/>
+
+        <textarea id = "listInput" rows="5" cols = "40" placeholder="Each new list entry must be a new line" wrap = "off"></textarea>
+
+        <button id = "submit" class = "buttons submitButton">Submit</button> <br/> <br/>
+    </div>
+
+
+    <div id = "result">
+        <h2>Result: </h2><br/>
+
+        <textarea id = "listOutput" rows="5" cols = "40" wrap = "off" readonly></textarea>
+
+    </div> 
+
+    <hr/>
+
+    <div id = "footerButtons">
+        <a href = "popup.html">
+            <button class = "buttons home">Home</button> 
+        </a>
+        <button id = "reset" class = "buttons reset">Reset</button> <br/>
+    </div>
+    
+</body>
+</html>

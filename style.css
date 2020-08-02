@@ -75,7 +75,7 @@ input[type = "text"] {
     margin-right: 50px;
 }
 
-/*Paragraphs, Labels, and Span*/
+/*Paragraphs, Labels, Span, and TextArea*/
 
 label, p{
     color: crimson;
@@ -83,8 +83,11 @@ label, p{
     font-size: 20px;
 }
 
-#minNumLabel ,#startingLetterLabel{
+#minNumLabel{
     margin-right: 60px;
+}
+#startingLetterLabel {
+    margin-right: 30px;
 }
 
 #errorMessage {
